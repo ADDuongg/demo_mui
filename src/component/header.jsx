@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import MainLogo from '../images/MainLogo.png';
 import ModalHeader from '../modal/modalHeader';
 
+
 const Header = () => {
     const [modalVisible, setModalVisible] = useState(false);
 
@@ -21,7 +22,7 @@ const Header = () => {
                             {menuItem?.map((item, index) => (
                                 <div
                                     key={index}
-                                    className={`menu-item text-xl cursor-pointer ${index === 0 ? 'text-colorPurple font-bold' : ''}`}
+                                    className={`menu-item text-xl cursor-pointer hover:text-colorPurple font-bold ${index === 0 ? 'text-colorPurple font-bold' : 'text-colorGray'}`}
                                 >
                                     {item}
                                     {index === 0 && <i className="fa-solid fa-plus" style={{ fontSize: '50%' }}></i>}

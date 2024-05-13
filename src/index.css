@@ -7,7 +7,7 @@
 .custom-btn {
     @apply cursor-pointer w-40 h-14 bg-colorPink rounded-3xl text-white font-bold;
 }
-
+    
 .custom-btn:hover {
     @apply hover:border-2 hover:bg-white hover:border-colorPink hover:text-colorPink;
 }
